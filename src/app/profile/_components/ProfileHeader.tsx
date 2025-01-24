@@ -85,14 +85,14 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
 
   return (
     <div
-      className="relative mb-8 bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-2xl p-8 border
-     border-gray-800/50 overflow-hidden"
+      className="relative mb-8 bg-white/5 rounded-2xl p-8 border
+     border-white/10 overflow-hidden"
     >
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:32px]" />
       <div className="relative flex items-center gap-8">
         <div className="relative group">
           <div
-            className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full 
+            className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-600 rounded-full 
           blur-xl opacity-50 group-hover:opacity-75 transition-opacity"
           />
           <img
@@ -100,20 +100,12 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
             alt="Profile"
             className="w-24 h-24 rounded-full border-4 border-gray-800/50 relative z-10 group-hover:scale-105 transition-transform"
           />
-          {userData.isPro && (
-            <div
-              className="absolute -top-2 -right-2 bg-gradient-to-r from-purple-500 to-purple-600 p-2
-             rounded-full z-20 shadow-lg animate-pulse"
-            >
-              <Zap className="w-4 h-4 text-white" />
-            </div>
-          )}
         </div>
         <div>
           <div className="flex items-center gap-3 mb-2">
             <h1 className="text-3xl font-bold text-white">{userData.name}</h1>
             {userData.isPro && (
-              <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-cyan-500/10 text-emerald-400 rounded-full text-sm font-medium">
                 Pro Member
               </span>
             )}
@@ -133,7 +125,7 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             key={index}
-            className="group relative bg-gradient-to-br from-black/40 to-black/20 rounded-2xl overflow-hidden"
+            className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden"
           >
             {/* Glow effect */}
             <div

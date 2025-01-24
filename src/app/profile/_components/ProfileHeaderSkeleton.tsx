@@ -1,19 +1,15 @@
 function ProfileHeaderSkeleton() {
   return (
     <div
-      className="relative mb-8 bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-2xl p-8 border
-       border-gray-800/50 overflow-hidden"
+      className="relative mb-8 bg-white/5 rounded-2xl p-8 border
+       border-white/10 overflow-hidden"
     >
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:32px]" />
       <div className="relative flex items-center gap-8">
         {/* Avatar Skeleton */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-full blur-xl" />
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-cyan-600/20 rounded-full blur-xl" />
           <div className="w-24 h-24 rounded-full bg-gray-800/80 animate-pulse relative z-10 border-4 border-gray-800/50" />
-          <div
-            className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-purple-500/50 
-            to-purple-600/50 rounded-full z-20 animate-pulse"
-          />
         </div>
 
         {/* User Info Skeleton */}

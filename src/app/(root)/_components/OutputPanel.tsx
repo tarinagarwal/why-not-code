@@ -27,7 +27,11 @@ function OutputPanel() {
   };
 
   return (
-    <div className="relative bg-[#181825] rounded-xl p-4 ring-1 ring-gray-800/50">
+    <div
+      className="relative bg-white/5
+        backdrop-blur-md
+        border border-white/5 rounded-xl p-4 ring-1 ring-gray-800/50"
+    >
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
@@ -57,11 +61,13 @@ function OutputPanel() {
           </button>
         )}
       </div>
-
+        <br />
       {/* Output Area */}
       <div className="relative">
         <div
-          className="relative bg-[#1e1e2e]/50 backdrop-blur-sm border border-[#313244] 
+          className="relative
+        backdrop-blur-md
+        border border-white/5 
         rounded-xl p-4 h-[600px] overflow-auto font-mono text-sm"
         >
           {isRunning ? (

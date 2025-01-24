@@ -40,8 +40,8 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
     >
       <Link href={`/snippets/${snippet._id}`} className="h-full block">
         <div
-          className="relative h-full bg-[#1e1e2e]/80 backdrop-blur-sm rounded-xl 
-          border border-[#313244]/50 hover:border-[#313244] 
+          className="relative h-full bg-white/5 rounded-xl 
+          border border-white/10 hover:border-gray-700 
           transition-all duration-300 overflow-hidden"
         >
           <div className="p-6">
@@ -50,12 +50,12 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
               <div className="flex items-center gap-3">
                 <div className="relative">
                   <div
-                    className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 
+                    className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg blur opacity-20 
                   group-hover:opacity-30 transition-all duration-500"
                     area-hidden="true"
                   />
                   <div
-                    className="relative p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:from-blue-500/20
+                    className="relative p-2 rounded-lg bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 group-hover:from-blue-500/20
                    group-hover:to-purple-500/20 transition-all duration-500"
                   >
                     <Image
@@ -68,7 +68,7 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-lg text-xs font-medium">
+                  <span className="px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-medium">
                     {snippet.language}
                   </span>
                   <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -110,7 +110,7 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
             {/* Content */}
             <div className="space-y-4">
               <div>
-                <h2 className="text-xl font-semibold text-white mb-2 line-clamp-1 group-hover:text-blue-400 transition-colors">
+                <h2 className="text-xl font-semibold text-white mb-2 line-clamp-1 group-hover:text-emerald-400 transition-colors">
                   {snippet.title}
                 </h2>
                 <div className="flex items-center gap-3 text-sm text-gray-400">

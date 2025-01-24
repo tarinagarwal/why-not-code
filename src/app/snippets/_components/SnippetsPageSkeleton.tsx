@@ -1,6 +1,6 @@
 const CardSkeleton = () => (
   <div className="relative group">
-    <div className="bg-[#1e1e2e]/80 rounded-xl border border-[#313244]/50 overflow-hidden h-[280px]">
+    <div className="bg-white/5 rounded-xl border border-[#313244]/50 overflow-hidden h-[280px]">
       <div className="p-6 space-y-4">
         {/* Header shimmer */}
         <div className="flex items-start justify-between">
@@ -33,7 +33,7 @@ const CardSkeleton = () => (
 
 export default function SnippetsPageSkeleton() {
   return (
-    <div className="min-h-screen bg-[#0a0a0f]">
+    <div className="min-h-screen bg-black">
       {/* Ambient background with loading pulse */}
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <div className="absolute top-[20%] -left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />

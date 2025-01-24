@@ -87,8 +87,8 @@ function ProfilePage() {
 
         {/* Main content */}
         <div
-          className="bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-3xl shadow-2xl 
-        shadow-black/50 border border-gray-800/50 backdrop-blur-xl overflow-hidden"
+          className="bg-white/5 rounded-3xl shadow-2xl 
+        shadow-black/50 border border-white/10 overflow-hidden"
         >
           {/* Tabs */}
           <div className="border-b border-gray-800/50">
@@ -143,7 +143,7 @@ function ProfilePage() {
                       key={execution._id}
                       className="group rounded-xl overflow-hidden transition-all duration-300 hover:border-blue-500/50 hover:shadow-md hover:shadow-blue-500/50"
                     >
-                      <div className="flex items-center justify-between p-4 bg-black/30 border border-gray-800/50 rounded-t-xl">
+                      <div className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-t-xl">
                         <div className="flex items-center gap-4">
                           <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 group-hover:opacity-30 transition-opacity" />
@@ -182,7 +182,7 @@ function ProfilePage() {
                         </div>
                       </div>
 
-                      <div className="p-4 bg-black/20 rounded-b-xl border border-t-0 border-gray-800/50">
+                      <div className="p-4 bg-white/5 rounded-b-xl border border-t-0 border-white/10">
                         <CodeBlock
                           code={execution.code}
                           language={execution.language}
