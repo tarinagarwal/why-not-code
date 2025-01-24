@@ -21,7 +21,9 @@ async function Header() {
     <div className="relative z-10">
       <div
         className="flex items-center lg:justify-between justify-center 
-        bg-[#0a0a0f]/80 backdrop-blur-xl p-6 mb-4 rounded-lg"
+   p-6 mb-4 rounded-lg bg-white/5
+        backdrop-blur-md
+        border border-white/5"
       >
         <div className="hidden lg:flex items-center gap-8">
           <Link href="/" className="flex items-center gap-3 group relative">
