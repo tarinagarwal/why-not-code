@@ -33,7 +33,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen 
          bg-gradient-to-br from-black via-slate-900 to-black
          text-gray-100
-         overflow-hidden`}
+         `}
         >
           <ConvexClientProvider>{children}</ConvexClientProvider>
 
